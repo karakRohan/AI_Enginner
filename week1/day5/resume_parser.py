@@ -14,7 +14,6 @@ if not my_api_key:
 client=Groq(api_key=my_api_key)
 model = "openai/gpt-oss-120b"
 
-
 job_description="""
 Description
 Do you want to solve real customer problems through innovative technology? Do you enjoy working on scalable services in a collaborative team environment? Do you want to see your code directly impact millions of customers worldwide?
