@@ -327,3 +327,7 @@ for candidate in worst_2:
         "%"
     )
     print(candidate["details"])
+
+
+
+# Run Korar jonno Command : uv run python resume_parser.py
