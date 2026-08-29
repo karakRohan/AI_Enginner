@@ -91,7 +91,7 @@ def run_agent(question):
         print("------------------")
 
         response = client.chat.completions.create(
-            model=model,
+            model=model, 
             messages=messages,
             temperature=0
         )
