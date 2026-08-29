@@ -13,7 +13,6 @@ client=Groq(api_key=my_api_key)
 # model="llama-3.3-70b-versatile"
 model = "openai/gpt-oss-20b"
 
-
 def llm_ans(prompt):
     message={
         "role":"user",
