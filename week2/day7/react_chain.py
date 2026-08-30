@@ -407,8 +407,6 @@ When everything is complete, provide a clear final answer.
             arguments = json.loads(
                 tool_call.function.arguments
             )
-             
-
 
             print("Tool:", tool_name)
 
