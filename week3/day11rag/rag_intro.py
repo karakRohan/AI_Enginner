@@ -49,5 +49,5 @@ def ask_llm(question):
     return answer
 
 
-question="what is pratyush's age?"
+question="what is pratyush's Net Worth?"
 print(ask_llm(question))
