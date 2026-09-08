@@ -13,7 +13,9 @@ if not my_api_key:
     raise ValueError("API key kaha hai bhai")
 
 client=Groq(api_key=my_api_key)
-groqmodel="llama-3.3-70b-versatile"
+# groqmodel="llama-3.3-70b-versatile"
+# groqmodel="llama-3.1-8b-instant"
+groqmodel="openai/gpt-oss-120b"
 
 documents = [
     "Employees receive 24 days of paid leave per year.",
