@@ -1,0 +1,375 @@
+🐍 Python & AI Engineering Command Cheat Sheet
+01 — Check Python Installation
+python --version
+python -V
+
+Check which Python is being used:
+
+where python
+02 — Run a Python File
+python main.py
+
+Example:
+
+python qdrant_day14.py
+03 — Open Python Interactive Shell
+python
+
+Test:
+
+print("Hello World")
+
+Exit:
+
+exit()
+04 — Check pip
+pip --version
+
+Recommended:
+
+python -m pip --version
+05 — Install a Python Package
+pip install package_name
+
+Recommended:
+
+python -m pip install package_name
+
+Example:
+
+python -m pip install qdrant-client
+06 — Install Multiple Packages
+pip install qdrant-client sentence-transformers python-dotenv groq
+
+Using python -m pip:
+
+python -m pip install qdrant-client sentence-transformers python-dotenv groq
+07 — Uninstall a Package
+pip uninstall package_name
+
+Example:
+
+pip uninstall qdrant-client
+08 — View Installed Packages
+pip list
+
+Check a specific package:
+
+pip show qdrant-client
+🟢 Virtual Environment
+09 — Create Virtual Environment
+python -m venv .venv
+10 — Activate Virtual Environment
+
+Windows PowerShell:
+
+.venv\Scripts\activate
+
+You should see something like:
+
+(.venv) PS C:\AI_Engineer>
+11 — Deactivate Virtual Environment
+deactivate
+⚡ UV Package Manager
+
+Since you are using uv, these commands are especially important.
+
+12 — Initialize a New Project
+uv init
+13 — Create Virtual Environment
+uv venv
+14 — Add a Package
+uv add package_name
+
+Example:
+
+uv add qdrant-client
+15 — Add Multiple Packages
+uv add qdrant-client sentence-transformers python-dotenv groq
+16 — Remove a Package
+uv remove package_name
+
+Example:
+
+uv remove qdrant-client
+17 — Install/Sync Dependencies
+uv sync
+18 — Run Python with UV
+uv run python main.py
+
+Example:
+
+uv run python qdrant_day14.py
+⭐ Important
+
+If you use:
+
+uv add qdrant-client
+
+prefer:
+
+uv run python qdrant_day14.py
+
+This ensures the project environment is used.
+
+📦 Requirements.txt
+19 — Create requirements.txt
+pip freeze > requirements.txt
+20 — Install from requirements.txt
+pip install -r requirements.txt
+🔐 Environment Variables
+21 — .env Example
+GROQ_API_KEY=your_api_key
+QDRANT_URL=your_qdrant_url
+QDRANT_API_KEY=your_qdrant_api_key
+
+Python:
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+groq_api_key = os.getenv("GROQ_API_KEY")
+qdrant_url = os.getenv("QDRANT_URL")
+22 — .gitignore
+
+Never upload API keys to GitHub.
+
+.env
+.venv/
+__pycache__/
+*.pyc
+🤖 AI / LLM Packages
+23 — Install Groq
+uv add groq
+
+Python:
+
+from groq import Groq
+24 — Install OpenAI
+uv add openai
+
+Python:
+
+from openai import OpenAI
+25 — Install Sentence Transformers
+uv add sentence-transformers
+
+Python:
+
+from sentence_transformers import SentenceTransformer
+
+Load model:
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+Generate embedding:
+
+embedding = model.encode("Hello world")
+🗄️ Qdrant
+26 — Install Qdrant Client
+uv add qdrant-client
+
+Python:
+
+from qdrant_client import QdrantClient
+
+Models:
+
+from qdrant_client.models import (
+    Distance,
+    VectorParams,
+    PointStruct
+)
+🤖 Groq
+27 — Create Groq Client
+from groq import Groq
+
+groq_client = Groq(
+    api_key=GROQ_API_KEY
+)
+28 — Make an LLM Request
+response = groq_client.chat.completions.create(
+    model="openai/gpt-oss-20b",
+    messages=[
+        {
+            "role": "user",
+            "content": "Explain RAG in simple words."
+        }
+    ]
+)
+
+Get the answer:
+
+answer = response.choices[0].message.content
+
+print(answer)
+🌐 FastAPI
+29 — Install FastAPI
+uv add fastapi uvicorn
+30 — Run FastAPI
+uv run uvicorn main:app --reload
+
+Specific port:
+
+uv run uvicorn main:app --reload --port 8000
+31 — FastAPI URLs
+
+Application:
+
+http://127.0.0.1:8000
+
+Swagger documentation:
+
+http://127.0.0.1:8000/docs
+📁 PowerShell Commands
+32 — Show Current Directory
+pwd
+33 — List Files
+ls
+
+or:
+
+dir
+34 — Change Directory
+cd folder_name
+
+Example:
+
+cd day14
+35 — Go Back One Directory
+cd ..
+36 — Create a Folder
+mkdir project
+37 — Create a File
+New-Item main.py
+🧪 Testing
+38 — Install Pytest
+uv add --dev pytest
+39 — Run Tests
+uv run pytest
+
+Specific test file:
+
+uv run pytest test_main.py
+🎨 Code Formatting
+40 — Install Black
+uv add --dev black
+
+Format the project:
+
+uv run black .
+41 — Install Ruff
+uv add --dev ruff
+
+Check code:
+
+uv run ruff check .
+🧹 Python Cache
+42 — Remove __pycache__
+Remove-Item -Recurse -Force __pycache__
+🐙 Git & GitHub
+43 — Initialize Git
+git init
+44 — Check Git Status
+git status
+45 — Add Files
+git add .
+46 — Commit Changes
+git commit -m "Initial commit"
+47 — Add GitHub Remote
+git remote add origin YOUR_GITHUB_URL
+48 — Push to GitHub
+git push -u origin main
+
+Next time:
+
+git add .
+git commit -m "Update project"
+git push
+🐳 Docker
+49 — Check Docker
+docker --version
+50 — Build Docker Image
+docker build -t my-app .
+51 — Run Docker Container
+docker run -p 8000:8000 my-app
+52 — Docker Compose
+
+Start:
+
+docker compose up
+
+Stop:
+
+docker compose down
+⭐ Most Important Commands for You
+
+তুমি এখন যেহেতু AI Engineering + MERN + RAG শিখছো, এইগুলো সবচেয়ে বেশি ব্যবহার করবে:
+
+# Python
+python --version
+where python
+python main.py
+
+# UV
+uv init
+uv venv
+uv add package_name
+uv remove package_name
+uv sync
+uv run python main.py
+
+# AI
+uv add groq
+uv add sentence-transformers
+uv add qdrant-client
+uv add python-dotenv
+
+# FastAPI
+uv add fastapi uvicorn
+uv run uvicorn main:app --reload
+
+# Git
+git status
+git add .
+git commit -m "message"
+git push
+
+# Docker
+docker --version
+docker build -t my-app .
+docker run -p 8000:8000 my-app
+docker compose up
+docker compose down
+
+
+
+
+
+
+
+New Project SetUp 
+
+Create Project
+     ↓
+   uv init
+     ↓
+   uv venv
+     ↓
+   uv add packages
+     ↓
+Create .env
+     ↓
+Write Python Code
+     ↓
+uv run python main.py
+     ↓
+Test & Debug
+     ↓
+git add .
+     ↓
+git commit
+     ↓
+git push 🚀
