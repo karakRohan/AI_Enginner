@@ -81,6 +81,8 @@ uv venv
 14 — Add a Package
 uv add package_name
 
+uv sync
+
 Example:
 
 uv add qdrant-client
