@@ -81,8 +81,6 @@ uv venv
 14 — Add a Package
 uv add package_name
 
-uv sync
-
 Example:
 
 uv add qdrant-client
@@ -375,3 +373,27 @@ git add .
 git commit
      ↓
 git push 🚀
+
+
+
+
+
+mera (Rohan)
+
+my Workflow 
+ YouTube Playlist → yt-dlp → 25 Videos → Hindi Transcript Extraction → Hindi to English Translation using Argos → Chunking with Timestamps → all-MiniLM-L6-v2 Embeddings → Qdrant Vector DB (Vector + Payload) → Query Embedding → Similarity Search → Relevant Chunks → Groq GPT-OSS-120B → Answer + Video Name + Timestamp + YouTube Link.
+
+I initially planned to process all 127 videos, but due to *time and storage constraints* (around 3 hours for transcript processing), I reduced the dataset to 25 videos for now.
+
+*Current Qdrant collection:* 25 videos, 1471 transcript chunks, 384-dimensional embeddings.
+
+then,
+
+cd padho_with_pratyush_Ai_Enginner/week3/ytscraper
+uv sync
+cp .env.example .env
+uv run ytrag load
+uv run ytrag serve
+
+http://127.0.0.1:8000
+
