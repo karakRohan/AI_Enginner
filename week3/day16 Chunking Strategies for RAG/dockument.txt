@@ -1,0 +1,97 @@
+OutPut :-
+
+========== FIXED SIZE ==========
+
+Chunk 1:
+The detective entered the abandoned house just before midnight. The rooms were silent, and the windows were covered with du
+--------------------
+
+Chunk 2:
+st. On the table, he found a bloodstained letter.
+
+The man who did the crime was John. Nobody in the village trusted him, but he had disapp
+--------------------
+
+Chunk 3:
+eared three days before the murder. The detective immediately realized that John was the main suspect.
+
+The next morning, the de
+--------------------
+
+Chunk 4:
+tective returned to the house. Behind a loose brick, he discovered a photograph of John standing beside the victim. This finally con
+--------------------
+
+Chunk 5:
+nected John to the crime.
+--------------------
+2️⃣ Paragraph Chunking
+
+এখানে separator="\n\n" ব্যবহার করা হয়েছে, তাই paragraph অনুযায়ী split হবে:
+
+========== PARAGRAPH ==========
+
+Chunk 1:
+The detective entered the abandoned house just before midnight. The rooms were silent, and the windows were covered with dust. On the table, he found a bloodstained letter.
+--------------------
+
+Chunk 2:
+The man who did the crime was John. Nobody in the village trusted him, but he had disappeared three days before the murder. The detective immediately realized that John was the main suspect.
+--------------------
+
+Chunk 3:
+The next morning, the detective returned to the house. Behind a loose brick, he discovered a photograph of John standing beside the victim. This finally connected John to the crime.
+--------------------
+
+⚠️ এখানে paragraphs chunk_size=100 থেকে বড় হলেও CharacterTextSplitter সেগুলোকে automatically sentence-level-এ ভাঙে না।
+
+3️⃣ Recursive Chunking
+
+এখানে chunk_size=100 এবং chunk_overlap=20:
+
+========== RECURSIVE ==========
+
+Chunk 1:
+The detective entered the abandoned house just before midnight. The rooms were silent, and the
+--------------------
+
+Chunk 2:
+the rooms were silent, and the windows were covered with dust. On the table, he found a bloodstained letter.
+--------------------
+
+Chunk 3:
+The man who did the crime was John. Nobody in the village trusted him, but he had disappeared
+--------------------
+
+Chunk 4:
+he had disappeared three days before the murder. The detective immediately realized that John was the main suspect.
+--------------------
+
+Chunk 5:
+The next morning, the detective returned to the house. Behind a loose brick, he discovered a
+--------------------
+
+Chunk 6:
+he discovered a photograph of John standing beside the victim. This finally connected John to the crime.
+--------------------
+
+
+এই code-এ ৩টা strategy আছে:
+1. Fixed-Size Chunking
+       ↓
+CharacterTextSplitter
+separator=""
+
+2. Paragraph Chunking
+       ↓
+CharacterTextSplitter
+separator="\n\n"
+
+3. Recursive Chunking
+       ↓
+RecursiveCharacterTextSplitter
+
+
+
+Command :- pip install langchain-text-splitters
+
