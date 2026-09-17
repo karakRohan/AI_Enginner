@@ -1,775 +1,749 @@
-# 🤖 AI Engineering Journey — 2026
+# 🤖 Rohan AI — Personal AI Portfolio Agent
 
-> 🚀 My journey from Software Developer to AI Engineer  
-> 📚 Learning through hands-on projects, real-world systems, and production-focused AI engineering.
+<div align="center">
 
----
+### Turning a Traditional Portfolio into an Interactive AI Experience
 
-## 🌟 About This Repository
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-Visit%20Site-8b5cf6?style=for-the-badge)](https://rohan-personal-ai-agent.vercel.app/)
+[![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Groq](https://img.shields.io/badge/LLM-Groq-F55036?style=for-the-badge)](https://groq.com/)
+[![MERN](https://img.shields.io/badge/Stack-MERN-000000?style=for-the-badge)](https://www.mongodb.com/mern-stack)
 
-This repository contains my complete **AI Engineering learning journey**.
+[🌐 Live Portfolio](https://rohan-personal-ai-agent.vercel.app/) •
+[💻 GitHub Repository](https://github.com/karakRohan/Rohan_personal_AI_Agent) •
+[🧩 LeetCode](https://leetcode.com/u/Code_Rider42/)
 
-I am following a structured roadmap focused on building practical AI systems rather than only studying theory.
-
-The goal is simple:
-
-> **Learn → Build → Evaluate → Deploy → Document → Get Job-Ready**
-
-The learning path covers:
-
-- 🧠 LLM Fundamentals
-- ✍️ Prompt Engineering
-- 🔌 LLM APIs
-- 📦 Structured Outputs
-- 📚 RAG
-- 🔎 Semantic Search
-- 🗄️ Vector Databases
-- ⚡ Advanced RAG
-- 🤖 AI Agents
-- 🔗 LangGraph
-- 🔌 MCP
-- 👥 Multi-Agent Systems
-- 📊 Evaluation
-- 🛡️ AI Security & Guardrails
-- 🔭 Observability
-- 🚀 Deployment
-- 🎯 AI System Design
-- 💼 Interview Preparation
+</div>
 
 ---
 
-# 🗺️ AI Engineering Roadmap
+## ✨ Overview
+
+**Rohan AI** is a full-stack AI portfolio agent designed to make a developer portfolio more **interactive, informative, and recruiter-friendly**.
+
+Instead of depending only on static pages, visitors can ask natural-language questions and explore Rohan's professional profile through an AI interface.
+
+The application combines:
+
+- ⚛️ React + Vite frontend
+- ⚙️ Node.js + Express backend
+- 🤖 Groq-powered LLM
+- 📚 Structured `knowledge.json` portfolio knowledge base
+- 🐙 GitHub REST API integration
+- 🧩 LeetCode GraphQL API integration
+- 📄 Resume and static portfolio assets
+
+### 🎯 Core Idea
 
 ```text
-                         ┌───────────────────────┐
-                         │   Python + Git        │
-                         │      Foundation      │
-                         └───────────┬───────────┘
-                                     │
-                                     ▼
-                         ┌───────────────────────┐
-                         │   🧠 LLM FUNDAMENTALS │
-                         │ Tokens • Context      │
-                         │ Temperature • APIs    │
-                         └───────────┬───────────┘
-                                     │
-                                     ▼
-                         ┌───────────────────────┐
-                         │ ✍️ PROMPT ENGINEERING │
-                         │ Few-shot • ReAct      │
-                         │ Structured Output     │
-                         └───────────┬───────────┘
-                                     │
-                                     ▼
-                    ┌────────────────────────────────┐
-                    │          📚 RAG SYSTEMS         │
-                    │                                │
-                    │ Documents → Chunking           │
-                    │      ↓                         │
-                    │ Embeddings → Vector DB         │
-                    │      ↓                         │
-                    │ Retrieval → LLM → Answer       │
-                    └────────────────┬───────────────┘
-                                     │
-                                     ▼
-                    ┌────────────────────────────────┐
-                    │      ⚡ ADVANCED RAG            │
-                    │                                │
-                    │ Hybrid Search                  │
-                    │ Reranking                      │
-                    │ Query Rewriting                │
-                    │ Contextual Retrieval            │
-                    │ RAG Evaluation                 │
-                    └────────────────┬───────────────┘
-                                     │
-                                     ▼
-                    ┌────────────────────────────────┐
-                    │          🤖 AI AGENTS           │
-                    │                                │
-                    │ Function Calling               │
-                    │ Tool Use                       │
-                    │ ReAct                          │
-                    │ Agent Memory                   │
-                    │ LangGraph                      │
-                    └────────────────┬───────────────┘
-                                     │
-                                     ▼
-                    ┌────────────────────────────────┐
-                    │       👥 MULTI-AGENT            │
-                    │                                │
-                    │ Supervisor                     │
-                    │ Planner                        │
-                    │ Executor                       │
-                    │ Reviewer                       │
-                    │ MCP                            │
-                    └────────────────┬───────────────┘
-                                     │
-                                     ▼
-                    ┌────────────────────────────────┐
-                    │ 🛡️ PRODUCTION AI               │
-                    │                                │
-                    │ Observability                  │
-                    │ Guardrails                     │
-                    │ Security                       │
-                    │ Evaluation                     │
-                    │ Cost Optimization              │
-                    └────────────────┬───────────────┘
-                                     │
-                                     ▼
-                    ┌────────────────────────────────┐
-                    │       🚀 DEPLOYMENT             │
-                    │                                │
-                    │ FastAPI                        │
-                    │ Docker                         │
-                    │ Cloud Deployment               │
-                    │ CI/CD                          │
-                    └────────────────┬───────────────┘
-                                     │
-                                     ▼
-                         ┌───────────────────────┐
-                         │ 💼 AI ENGINEER READY  │
-                         │ Projects • Resume     │
-                         │ System Design • Jobs  │
-                         └───────────────────────┘
-📅 Learning Roadmap
-Week	Focus Area	Main Project / Deliverable
-01	🧠 LLM Fundamentals	Multi-provider LLM application
-02	✍️ Prompt Engineering	Structured extraction pipeline
-03	📚 RAG Foundations	Document Q&A System
-04	⚡ Advanced RAG	Evaluated RAG System
-05	🤖 AI Agents	Autonomous Research Agent
-06	👥 Multi-Agent + MCP	Multi-Agent Workflow
-07	🛡️ Production AI	Observable & secure AI system
-08	🚀 Deployment	Full-Stack AI Product
-09	💼 Interview Prep	AI System Design + Interview Questions
-10	🎯 Resume & Portfolio	Job-ready AI Engineer Portfolio
+Traditional Portfolio
+        │
+        ▼
+  Static Information
+        │
+        ▼
+ ┌─────────────────┐
+ │    Rohan AI     │
+ │                 │
+ │ Ask → Explore   │
+ │ Learn → Hire    │
+ └─────────────────┘
+        │
+        ▼
+Interactive AI-Powered
+Digital Representative
+```
 
-The course structure includes approximately 44 episodes across the core and bonus modules.
+---
 
-🧠 01 — LLM Fundamentals
-Topics
-What is an LLM?
-Tokens
-Context Window
-Temperature
-Top-p
-System / User / Assistant roles
-Hallucinations
-LLM APIs
-Streaming
-Async calls
-Retries
-Rate limits
-Model selection
-Cost optimization
-🔨 Project
+# 🏗️ System Architecture
 
-Multi-Provider LLM Chatbot
+The application follows a simple full-stack architecture where the frontend communicates with a central Express backend. The backend combines structured portfolio knowledge, AI generation, and live developer-data APIs.
 
-                 User
-                   │
-                   ▼
-          ┌────────────────┐
-          │  LLM Router    │
-          └───────┬────────┘
-                  │
-       ┌──────────┼──────────┐
-       ▼          ▼          ▼
-    OpenAI      Groq      Gemini
-       │          │          │
-       └──────────┼──────────┘
-                  ▼
-              Response
-Skills
-Python
-LLM APIs
-Streaming
-Error Handling
-Retries
-Model Routing
-✍️ 02 — Prompt Engineering
-Topics
-Production prompts
-Zero-shot prompting
-Few-shot prompting
-Chain-of-Thought
-ReAct
-Prompt chaining
-Meta prompting
-Prompt injection
-Output validation
-Structured output
-🔨 Project
+```mermaid
+flowchart TB
 
-Production Data Extraction Pipeline
+    U["👤 Visitor / Recruiter"]
 
-PDF / Email
+    subgraph FRONTEND["🌐 Frontend — Vercel"]
+        FE["⚛️ React + Vite"]
+        UI["🖥️ Portfolio UI"]
+        CHAT["💬 AI Chat"]
+        DASH["📊 GitHub + LeetCode Dashboards"]
+        PORT["📁 Projects / Skills / Experience"]
+        RES["📄 Resume / Static Assets"]
+
+        FE --> UI
+        FE --> CHAT
+        FE --> DASH
+        FE --> PORT
+        FE --> RES
+    end
+
+    subgraph BACKEND["⚙️ Backend — Render"]
+        BE["🟢 Node.js + Express"]
+        KB["📚 knowledge.json"]
+        AI["🤖 Groq LLM<br/>openai/gpt-oss-20b"]
+    end
+
+    GH["🐙 GitHub REST API"]
+    LC["🧩 LeetCode GraphQL API"]
+
+    U --> FE
+    CHAT --> BE
+    DASH --> BE
+    BE --> KB
+    BE --> AI
+    BE --> GH
+    BE --> LC
+
+    AI --> BE
+    GH --> BE
+    LC --> BE
+
+    BE --> FE
+    FE --> U
+```
+
+---
+
+# 🔄 Request & Response Flow
+
+```mermaid
+flowchart LR
+
+    A["👤 User"] --> B["🌐 React UI"]
+    B --> C["⚙️ Express API"]
+
+    C --> D{"Request Type?"}
+
+    D -->|"AI Question"| E["📚 Knowledge / FAQ"]
+    E -->|"Known Answer"| H["💬 Response"]
+
+    E -->|"Needs LLM"| F["🤖 Groq LLM"]
+    F --> H
+
+    D -->|"GitHub"| G["🐙 GitHub API"]
+    D -->|"LeetCode"| I["🧩 LeetCode API"]
+
+    G --> H
+    I --> H
+
+    H --> B
+    B --> A
+```
+
+---
+
+# 🧠 AI Response Architecture
+
+The backend first normalizes and checks incoming questions, then attempts to answer from known portfolio information before falling back to the Groq LLM.
+
+```mermaid
+flowchart LR
+
+    Q["❓ User Question"]
+    N["🧹 Normalize Input"]
+    P["🔐 Privacy / Safety Check"]
+    K["📌 FAQ / Knowledge Match"]
+    G["🤖 Groq LLM"]
+    R["💬 Final Response"]
+
+    Q --> N --> P --> K
+
+    K -->|"✅ Matched"| R
+    K -->|"❌ No Match"| G
+    G --> R
+```
+
+### Why this architecture?
+
+```text
+User Question
      │
      ▼
-   LLM
+Normalize
      │
      ▼
-Structured JSON
+Privacy / Safety
      │
      ▼
-Pydantic Validation
-     │
-     ▼
-Reliable Data
-📚 03 — RAG Foundations
+Known Knowledge?
+   /       \
+ Yes        No
+ │           │
+ ▼           ▼
+Direct     Groq LLM
+Answer       │
+   \         /
+    \       /
+     ▼     ▼
+   Final Response
+```
 
-This is one of the most important parts of my AI Engineering journey.
+This keeps common portfolio answers grounded in the application's known data while preserving a conversational AI experience.
 
-RAG Pipeline
-              📄 Documents
-                    │
-                    ▼
-                Chunking
-                    │
-                    ▼
-               Embeddings
-                    │
-                    ▼
-              🗄️ Qdrant
-                    │
-                    │
-User Question ──────┘
-       │
-       ▼
-   Embedding
-       │
-       ▼
- Vector Search
-       │
-       ▼
-Relevant Context
-       │
-       ▼
-      LLM
-       │
-       ▼
-  Final Answer
-Topics
-What is RAG?
-Document ingestion
-Chunking
-Embeddings
-Vector databases
-Similarity search
-Qdrant
-Retrieval
-Context construction
-Grounded generation
-🔨 Project
+---
 
-📄 Document Q&A System
+# 🧩 Core Project Modules
 
-Users can upload documents and ask questions based on their content.
+```mermaid
+flowchart TB
 
-⚡ 04 — Advanced RAG & Evaluation
+    APP["🤖 Rohan AI"]
 
-Basic RAG is not enough.
+    subgraph USER_LAYER["👤 User Experience"]
+        HOME["🏠 Portfolio Home"]
+        ABOUT["👨‍💻 About"]
+        PROJECTS["🚀 Projects"]
+        SKILLS["🛠️ Skills"]
+        EXP["💼 Experience"]
+        HIRE["🤝 Hire Me"]
+        RESUME["📄 Resume"]
+    end
 
-The goal is to understand how to measure and improve retrieval quality.
+    subgraph AI_LAYER["🧠 AI Layer"]
+        CHAT["💬 AI Chat"]
+        ACTIONS["⚡ Quick AI Actions"]
+        KNOWLEDGE["📚 Knowledge Base"]
+        LLM["🤖 Groq LLM"]
+    end
 
-Topics
-🔎 Hybrid Search
-🔄 Reranking
-🧠 Query Rewriting
-🔍 Multi-query Retrieval
-📌 Contextual Retrieval
-📊 RAG Evaluation
-RAGAS
-Faithfulness
-Answer Relevancy
-Context Precision
-Context Recall
-Advanced Pipeline
-                User Query
-                     │
-                     ▼
-              Query Rewriting
-                     │
-              ┌──────┴──────┐
-              ▼             ▼
-        Semantic Search   BM25
-              │             │
-              └──────┬──────┘
-                     ▼
-              Hybrid Results
-                     │
-                     ▼
-                  Reranker
-                     │
-                     ▼
-              Relevant Context
-                     │
-                     ▼
-                    LLM
-                     │
-                     ▼
-              Final Answer
-                     │
-                     ▼
-                📊 Evaluation
-🤖 05 — AI Agents
+    subgraph DATA_LAYER["📊 Live Data Layer"]
+        GITHUB["🐙 GitHub Dashboard"]
+        LEETCODE["🧩 LeetCode Dashboard"]
+    end
 
-Moving from:
+    subgraph SERVER_LAYER["⚙️ Backend Layer"]
+        API["Express REST APIs"]
+        HEALTH["❤️ Health API"]
+    end
 
-User → LLM → Answer
+    APP --> HOME
+    APP --> ABOUT
+    APP --> PROJECTS
+    APP --> SKILLS
+    APP --> EXP
+    APP --> HIRE
+    APP --> RESUME
 
-to:
+    APP --> CHAT
+    APP --> ACTIONS
 
-User
- ↓
-Agent
- ↓
-Think
- ↓
-Choose Tool
- ↓
-Execute Tool
- ↓
-Observe Result
- ↓
-Continue / Finish
-Topics
-Function Calling
-Tool Use
-ReAct
-Agent loops
-Agent memory
-State management
-LangGraph
-Human-in-the-loop
-🔨 Project
+    CHAT --> API
+    ACTIONS --> API
+    API --> KNOWLEDGE
+    API --> LLM
 
-🔎 Autonomous Research Agent
+    GITHUB --> API
+    LEETCODE --> API
+    API --> HEALTH
+```
 
-                   User Query
-                       │
-                       ▼
-                  🧠 Planner
-                       │
-              ┌────────┼────────┐
-              ▼        ▼        ▼
-            Search   Research  Tools
-              │        │        │
-              └────────┼────────┘
-                       ▼
-                  📝 Synthesizer
-                       │
-                       ▼
-                  📚 Citations
-                       │
-                       ▼
-                  Final Answer
-👥 06 — Multi-Agent Systems + MCP
-Multi-Agent Architecture
-                    👑 Supervisor
-                         │
-          ┌──────────────┼──────────────┐
-          ▼              ▼              ▼
-       🔎 Researcher   ✍️ Writer      🔍 Reviewer
-          │              │              │
-          └──────────────┼──────────────┘
-                         ▼
-                    Final Output
-Topics
-Supervisor Pattern
-Swarm Pattern
-Hierarchical Agents
-Agent Handoff
-MCP
-MCP Server
-MCP Client
-Tool Integration
-🔨 Project
+---
 
-Multi-Agent Workflow with MCP
+# ⚡ Key Features
 
-🛡️ 07 — Production AI
+## 🤖 AI Portfolio Chat
 
-A demo is not a production system.
+Visitors can ask natural-language questions about:
 
-This stage focuses on making AI systems:
+- 💻 Technical skills
+- 🚀 Projects
+- 🤖 AI / LLM interests
+- 🧠 Coding journey
+- 🎓 Education
+- 💼 Career goals
+- 🤝 Hiring information
 
-Reliable
-   +
-Observable
-   +
-Secure
-   +
-Evaluated
-   +
-Cost Efficient
-Topics
-🔭 Observability
-📊 Continuous Evaluation
-🛡️ Guardrails
-🔐 AI Security
-Prompt Injection
-PII Protection
-Output Validation
-Cost Optimization
-Latency Optimization
-Semantic Caching
-Production Architecture
-                     AI APPLICATION
-                           │
-             ┌─────────────┼─────────────┐
-             ▼             ▼             ▼
-        🔭 Tracing     📊 Evals      🛡️ Guardrails
-             │             │             │
-             └─────────────┼─────────────┘
-                           ▼
-                       LLM Layer
-                           │
-                           ▼
-                    Production API
-🚀 08 — Deployment
+## ⚡ Quick AI Actions
 
-The goal is not just:
+One-click prompts for important portfolio questions:
 
-"It works on my laptop."
+```text
+┌──────────────────────┐
+│ Ask About Skills     │
+└──────────────────────┘
 
-The goal is:
+┌──────────────────────┐
+│ Show My Projects     │
+└──────────────────────┘
 
-"It is deployed and accessible."
+┌──────────────────────┐
+│ Why Hire Rohan?      │
+└──────────────────────┘
 
-Topics
-FastAPI
-Async APIs
-Streaming
-WebSockets
-Docker
-Environment Variables
-Cloud Deployment
-CI/CD
-Deployment Architecture
-                    🌍 INTERNET
-                         │
-                         ▼
-                  ┌─────────────┐
-                  │   Frontend  │
-                  │    React    │
-                  └──────┬──────┘
-                         │
-                         ▼
-                  ┌─────────────┐
-                  │   Backend   │
-                  │ Node/FastAPI│
-                  └──────┬──────┘
-                         │
-             ┌───────────┼───────────┐
-             ▼           ▼           ▼
-          MongoDB      Qdrant      Redis
-             │           │           │
-             └───────────┼───────────┘
-                         ▼
-                    🤖 AI / LLM
-🏆 Hero Projects
+┌──────────────────────┐
+│ Coding Journey       │
+└──────────────────────┘
+```
 
-My goal is to build multiple practical projects throughout this journey.
+## 🐙 Live GitHub Dashboard
 
-📄 Project 01 — Production RAG System
+The backend connects to GitHub to retrieve profile and repository information, allowing the portfolio to present developer activity rather than only manually written static content.
 
-AI Research Assistant
+## 🧩 Live LeetCode Dashboard
 
-Features:
+The application integrates with LeetCode data to display coding progress and problem-solving activity.
 
-PDF upload
-Document processing
-Embeddings
-Vector search
-Semantic retrieval
-Cited answers
-Confidence scoring
-Evaluation
-🤖 Project 02 — Autonomous Research Agent
+## 🚀 Projects Showcase
 
-An AI agent that:
+| Project | Stack | Focus |
+|---|---|---|
+| **Doctor Appointment Web** | MERN | Healthcare & appointment management |
+| **Text To Image Generator** | MERN | AI-powered image generation |
+| **Video Calling Chat App** | MERN + WebRTC | Real-time communication |
 
-Query
- ↓
-Research
- ↓
-Search
- ↓
-Analyze
- ↓
-Synthesize
- ↓
-Cite
- ↓
-Answer
+## 📄 Interactive Resume
 
-Built using agentic workflows and tool use.
+The portfolio provides resume access with a preview experience so recruiters can quickly review the profile.
 
-💼 Project 03 — Full-Stack AI Product
+## 💼 Hire Me Section
 
-A complete AI-powered web application with:
+A dedicated hiring section provides professional contact options for recruiters, companies, and collaboration opportunities.
 
-React frontend
-Backend API
-AI service
-Streaming
-Authentication
-Database
-Evaluation
-Deployment
-🧰 Tech Stack
-💻 Programming
-Python
-JavaScript
-TypeScript
-SQL
-🤖 AI / LLM
-LLMs
-Prompt Engineering
-Structured Outputs
-Function Calling
-RAG
-AI Agents
-Multi-Agent Systems
-🔎 AI Infrastructure
-Sentence Transformers
-Embeddings
-Qdrant
-Vector Search
-RAGAS
-LangGraph
-MCP
-⚙️ Backend
-FastAPI
-Node.js
-Express.js
-REST APIs
-WebSockets
-🗄️ Databases
-MongoDB
-PostgreSQL
-Redis
-Qdrant
-🚀 DevOps
-Git
-GitHub
-Docker
-CI/CD
-Cloud Deployment
-📊 My Learning Philosophy
+## 📱 Responsive UI
 
-I don't want to only watch tutorials.
+Designed for:
 
-For every topic:
+```text
+Desktop ──────── Laptop
+     │             │
+     └──────┬──────┘
+            │
+         Tablet
+            │
+         Mobile
+```
 
-              📚 LEARN
-                 │
-                 ▼
-              🧠 UNDERSTAND
-                 │
-                 ▼
-              💻 BUILD
-                 │
-                 ▼
-              🧪 TEST
-                 │
-                 ▼
-              📊 EVALUATE
-                 │
-                 ▼
-              🚀 DEPLOY
-                 │
-                 ▼
-              📝 DOCUMENT
-                 │
-                 ▼
-              💼 ADD TO PORTFOLIO
-🎯 Interview Preparation
+## 🔐 Privacy-Aware Design
 
-Alongside technical projects, I am preparing for AI Engineer interviews.
+The AI experience is structured to avoid exposing private personal information and to focus on relevant professional/public profile details.
 
-🧠 LLM Questions
-What is a token?
-What is a context window?
-What is temperature?
-Why do hallucinations happen?
-How do you handle rate limits?
-How do you select an LLM?
-📚 RAG Questions
-What is RAG?
-What are embeddings?
-How does vector search work?
-How do you choose chunk size?
-RAG vs Fine-tuning?
-What is hybrid search?
-What is reranking?
-How do you evaluate RAG?
-🤖 Agent Questions
-What is an AI agent?
-Agent vs Chain?
-What is ReAct?
-What is function calling?
-When should you use agents?
-What is LangGraph?
-What is MCP?
-🏗️ System Design
+---
 
-I am also learning to design:
+# 🛠️ Technology Stack
 
-AI Chatbot
-RAG Platform
-AI Research Agent
-Customer Support Agent
-AI Search System
-Multi-Agent Platform
-📈 Progress Tracker
-Area	Status
-🐍 Python	🟡 Learning
-🧠 LLM Fundamentals	🟡 Learning
-✍️ Prompt Engineering	🟡 Learning
-📚 RAG	🟡 Learning
-🗄️ Vector Database	🟡 Learning
-⚡ Advanced RAG	⬜ Upcoming
-🤖 AI Agents	⬜ Upcoming
-🔗 LangGraph	⬜ Upcoming
-🔌 MCP	⬜ Upcoming
-📊 Evaluation	⬜ Upcoming
-🛡️ AI Security	⬜ Upcoming
-🔭 Observability	⬜ Upcoming
-🚀 Deployment	⬜ Upcoming
-💼 System Design	⬜ Upcoming
-🎯 Interview Preparation	⬜ Upcoming
+```mermaid
+flowchart LR
 
-🟡 Currently Learning
-🟢 Completed
-⬜ Upcoming
+    FE["⚛️ React + Vite"]
+    JS["🟨 JavaScript"]
+    CSS["🎨 CSS3"]
+    ICON["✦ Lucide React"]
 
-📂 Repository Structure
-AI-Engineering/
+    BE["🟢 Node.js"]
+    EX["🚂 Express.js"]
+    CORS["🔗 CORS"]
+    SDK["🔌 OpenAI SDK"]
+    GROQ["🤖 Groq API"]
+    KB["📚 knowledge.json"]
+
+    GH["🐙 GitHub REST API"]
+    LC["🧩 LeetCode GraphQL API"]
+
+    FE --> BE
+    JS --> FE
+    CSS --> FE
+    ICON --> FE
+
+    BE --> EX
+    BE --> CORS
+    BE --> SDK
+    SDK --> GROQ
+    BE --> KB
+    BE --> GH
+    BE --> LC
+```
+
+### Frontend
+
+| Technology | Purpose |
+|---|---|
+| React.js | Component-based UI |
+| Vite | Frontend development and build tooling |
+| JavaScript | Application logic |
+| HTML5 | Page structure |
+| CSS3 | Responsive styling and animations |
+| Lucide React | Interface icons |
+
+### Backend
+
+| Technology | Purpose |
+|---|---|
+| Node.js | Server runtime |
+| Express.js | REST API server |
+| CORS | Cross-origin communication |
+| OpenAI SDK | LLM client interface |
+| Groq API | LLM inference |
+| `knowledge.json` | Structured portfolio knowledge |
+
+### External Integrations
+
+- 🐙 GitHub REST API
+- 🧩 LeetCode GraphQL API
+- 🤖 Groq OpenAI-compatible API
+
+### Deployment
+
+```text
+⚛️ Frontend
+      │
+      ▼
+   Vercel
+      │
+      │ API Requests
+      ▼
+🟢 Backend
+      │
+      ▼
+   Render
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+Rohan_personal_AI_Agent/
 │
-├── 01-llm-fundamentals/
-│   ├── api-basics/
-│   ├── streaming/
-│   ├── structured-output/
-│   └── model-routing/
+├── backend/
+│   ├── .env
+│   ├── .env.example
+│   ├── knowledge.json
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
 │
-├── 02-prompt-engineering/
-│   ├── prompting/
-│   ├── few-shot/
-│   ├── react/
-│   └── prompt-security/
-│
-├── 03-rag/
-│   ├── embeddings/
-│   ├── chunking/
-│   ├── qdrant/
-│   ├── retrieval/
-│   └── rag-v1/
-│
-├── 04-advanced-rag/
-│   ├── hybrid-search/
-│   ├── reranking/
-│   ├── query-rewriting/
-│   └── evaluation/
-│
-├── 05-agents/
-│   ├── function-calling/
-│   ├── react-agent/
-│   ├── langgraph/
-│   └── research-agent/
-│
-├── 06-multi-agent-mcp/
-│   ├── multi-agent/
-│   ├── mcp/
-│   └── workflows/
-│
-├── 07-production-ai/
-│   ├── observability/
-│   ├── guardrails/
-│   ├── security/
-│   └── optimization/
-│
-├── 08-deployment/
-│   ├── fastapi/
-│   ├── docker/
-│   └── deployment/
+├── frontend/
+│   ├── public/
+│   │   ├── profile.jpg
+│   │   ├── resume.pdf
+│   │   └── resume-preview.png
+│   │
+│   ├── src/
+│   │   ├── main.jsx
+│   │   └── styles.css
+│   │
+│   ├── index.html
+│   ├── package.json
+│   └── package-lock.json
 │
 └── README.md
-🌱 What I Want to Become
-Software Developer
-        │
-        ▼
-Full-Stack Developer
-        │
-        ▼
-AI Application Developer
-        │
-        ▼
-AI Engineer
-        │
-        ▼
-🚀 Production AI Engineer
+```
 
-My goal is to become an engineer who can take an AI idea from:
+---
 
-Problem → Architecture → Development → Evaluation → Deployment
+# ⚙️ Local Development
 
-⭐ Current Focus
+## 1. Clone the repository
 
-Right now, I am focusing on:
+```bash
+git clone https://github.com/karakRohan/Rohan_personal_AI_Agent.git
+```
 
-🧠 LLMs
-     ↓
-📚 RAG
-     ↓
-🔎 Embeddings
-     ↓
-🗄️ Qdrant
-     ↓
-🤖 AI Applications
+## 2. Enter the project
 
-Next:
+```bash
+cd Rohan_personal_AI_Agent
+```
 
-⚡ Advanced RAG
-      ↓
-🤖 Agents
-      ↓
-🔗 LangGraph
-      ↓
-🔌 MCP
-      ↓
-🛡️ Production AI
-      ↓
-🚀 Deployment
-📚 Learning Source
+## 3. Install frontend dependencies
 
-I am following the Padho with Pratyush — The AI Engineer Course, a practical AI Engineering roadmap covering LLMs, RAG, agents, evaluation, production systems, deployment, interview preparation, and portfolio development.
+```bash
+cd frontend
+npm install
+```
 
-🤝 Connect With Me
+## 4. Install backend dependencies
 
-I'm documenting my AI Engineering journey through:
+Open another terminal:
 
-💻 GitHub Projects
-🧠 Technical Notes
-🚀 Real-world AI Applications
-📊 Experiments & Evaluations
-🎯 Interview Preparation
-⭐ Final Goal
+```bash
+cd backend
+npm install
+```
 
-Don't just learn AI. Build AI systems.
+## 5. Configure environment variables
 
-             LEARN
-               ↓
-             BUILD
-               ↓
-            EVALUATE
-               ↓
-            DEPLOY
-               ↓
-           DOCUMENT
-               ↓
-            GET HIRED 🚀
-🚀 Let's Build the Future with AI.
+Create:
 
-Learning in public • Building in public • Growing every day.
+```text
+backend/.env
+```
+
+Add:
+
+```env
+PORT=5000
+GROQ_API_KEY=YOUR_GROQ_API_KEY
+GROQ_MODEL=openai/gpt-oss-20b
+```
+
+> ⚠️ Never commit your real API key to GitHub.
+
+## 6. Start the backend
+
+```bash
+cd backend
+npm start
+```
+
+Backend:
+
+```text
+http://localhost:5000
+```
+
+## 7. Start the frontend
+
+Open a second terminal:
+
+```bash
+cd frontend
+npm run dev
+```
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 🌐 Production Deployment
+
+## Frontend — Vercel
+
+Deploy the `frontend` directory to Vercel.
+
+## Backend — Render
+
+Deploy the `backend` directory as a Node.js Web Service on Render.
+
+After deployment, update the API base URL inside:
+
+```text
+frontend/src/main.jsx
+```
+
+Example:
+
+```js
+const API = "https://your-backend-url.onrender.com";
+```
+
+> The production frontend should point to the deployed backend URL, not `http://localhost:5000`.
+
+---
+
+# 🔑 Environment Variables
+
+The backend uses:
+
+```env
+GROQ_API_KEY=your_api_key
+GROQ_MODEL=openai/gpt-oss-20b
+PORT=5000
+```
+
+### Recommended `.gitignore`
+
+```gitignore
+node_modules/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+```
+
+### 🔒 Security Rule
+
+Never expose:
+
+```text
+API Keys
+Access Tokens
+Secrets
+Private Credentials
+```
+
+in source code, screenshots, commits, or README files.
+
+---
+
+# 🔌 Backend API Overview
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| `GET` | `/api/health` | Backend health and configuration status |
+| `GET` | `/api/profile` | Portfolio profile data |
+| `GET` | `/api/github` | GitHub profile and repository data |
+| `GET` | `/api/leetcode` | LeetCode statistics/data |
+| `POST` | `/api/chat` | AI portfolio conversation |
+
+### Health Check
+
+```text
+GET /api/health
+```
+
+Use this endpoint after deployment to verify that the backend is reachable.
+
+---
+
+# 🎯 Project Goals
+
+This project explores the practical combination of:
+
+```text
+Full Stack Web Development
+            +
+Artificial Intelligence
+            +
+Large Language Models
+            +
+API Integration
+            +
+Real-Time Developer Data
+            +
+Conversational Interfaces
+            +
+Interactive UI/UX
+            +
+Portfolio Engineering
+```
+
+### Main Objective
+
+> Build a portfolio that does more than display information — it should help communicate the developer behind it.
+
+---
+
+# 📈 Future Roadmap
+
+```mermaid
+flowchart LR
+
+    P1["✅ Phase 1<br/>Core AI Portfolio"]
+    P2["🚧 Phase 2<br/>Interaction & Discovery"]
+    P3["🔮 Phase 3<br/>Intelligence & Analytics"]
+    P4["🔮 Phase 4<br/>Premium Experience"]
+
+    P1 --> P2 --> P3 --> P4
+```
+
+### Phase 1 — Core AI Portfolio ✅
+
+- AI portfolio chat
+- Portfolio knowledge base
+- GitHub integration
+- LeetCode integration
+- Resume access
+- Recruiter-focused sections
+
+### Phase 2 — Interaction & Discovery 🚧
+
+- Smarter follow-up questions
+- Deeper project exploration
+- Improved recruiter workflows
+- Better conversational navigation
+
+### Phase 3 — Intelligence & Analytics 🔮
+
+- Recruiter Mode
+- Advanced developer analytics
+- Interactive technology explorer
+- AI-powered project recommendations
+
+### Phase 4 — Premium Experience 🔮
+
+- 🎙️ Voice interaction
+- 🌐 Multilingual AI — English, বাংলা, हिन्दी
+- ✨ Premium animations and transitions
+
+---
+
+# 👨‍💻 About Rohan
+
+**Rohan Karak** is a Full Stack Developer and AI/ML enthusiast focused on building intelligent, scalable, and user-focused applications.
+
+### Technical Interests
+
+```text
+MERN Stack
+Python
+AI / ML
+LLMs
+Generative AI
+REST APIs
+Data Structures & Algorithms
+```
+
+He is currently pursuing a **B.Tech in Computer Science and Engineering** and continuously works on software projects, problem-solving, and AI-powered applications.
+
+---
+
+# 🏆 Coding & Achievements
+
+- 🔥 LeetCode 50 Days, 100 Days, 200 Days and 365 Days Coding Streak Badges
+- 💻 430+ LeetCode Problems Solved
+- 🧩 450+ GeeksforGeeks Problems Solved
+- 🎯 GeeksforGeeks 100 Days Coding Challenge
+- 🚀 Participated in College Hackathons at IEM Kolkata and NIT Rourkela
+- 📜 Open Source GitHub Certificate — GDSC
+
+---
+
+# 📊 Developer Profile
+
+```text
+┌──────────────────────────────────────────┐
+│              ROHAN KARAK                 │
+├──────────────────────────────────────────┤
+│ Role        : Full Stack Developer       │
+│ Focus       : AI / LLM / GenAI           │
+│ Education   : B.Tech CSE                 │
+│ GitHub      : karakRohan                 │
+│ LeetCode    : Code_Rider42               │
+│ Projects    : MERN + AI + WebRTC         │
+└──────────────────────────────────────────┘
+```
+
+---
+
+# 🌐 Connect With Rohan
+
+| Platform | Link |
+|---|---|
+| 🐙 GitHub | [karakRohan](https://github.com/karakRohan) |
+| 💼 LinkedIn | [Rohan Karak](https://www.linkedin.com/in/rohan-karak-9a0b78288/) |
+| 🌐 Portfolio | [Rohan Portfolio](https://rohanportfolio-eight.vercel.app/) |
+| 🧩 LeetCode | [Code_Rider42](https://leetcode.com/u/Code_Rider42/) |
+| 📚 GeeksforGeeks | [rohankarak](https://www.geeksforgeeks.org/profile/rohankarak) |
+
+---
+
+# ⭐ Support
+
+If you find this project interesting, consider giving the repository a ⭐ on GitHub.
+
+Your support helps motivate continued learning, experimentation, and development.
+
+---
+
+## ✨ Developer Motto
+
+### ✨ Eat(). Sleep(). Code(). Repeat(). ✨
+
+### 🙏 Trusting God's plan — every step, every decision 🕉️
+
+---
+
+<div align="center">
+
+**Built with ❤️ using React, Node.js, Groq, APIs, and a lot of curiosity.**
+
+</div>
