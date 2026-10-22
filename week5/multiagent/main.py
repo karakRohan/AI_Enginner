@@ -10,7 +10,6 @@ TEST_QUERY = (
     "and (2) how many Eiffel Towers stacked on top of each other would reach the Burj Khalifa's height."
 )
 
-
 def main():
     print("=" * 60)
     print("QUERY:", TEST_QUERY)
